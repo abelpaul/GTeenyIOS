@@ -14,6 +14,7 @@
 		5072B0041F6D900B006B0A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5072B0021F6D900B006B0A0B /* LaunchScreen.storyboard */; };
 		5072B00F1F6D900B006B0A0B /* AboutMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072B00E1F6D900B006B0A0B /* AboutMeTests.swift */; };
 		5072B01A1F6D900B006B0A0B /* AboutMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072B0191F6D900B006B0A0B /* AboutMeUITests.swift */; };
+		5072B0281F6DA28B006B0A0B /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5072B0271F6DA28B006B0A0B /* BioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5072B0151F6D900B006B0A0B /* AboutMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboutMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5072B0191F6D900B006B0A0B /* AboutMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeUITests.swift; sourceTree = "<group>"; };
 		5072B01B1F6D900B006B0A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5072B0271F6DA28B006B0A0B /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				5072AFF91F6D900B006B0A0B /* AppDelegate.swift */,
 				5072AFFB1F6D900B006B0A0B /* ViewController.swift */,
 				5072AFFD1F6D900B006B0A0B /* Main.storyboard */,
+				5072B0271F6DA28B006B0A0B /* BioViewController.swift */,
 				5072B0001F6D900B006B0A0B /* Assets.xcassets */,
 				5072B0021F6D900B006B0A0B /* LaunchScreen.storyboard */,
 				5072B0051F6D900B006B0A0B /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				5072AFFC1F6D900B006B0A0B /* ViewController.swift in Sources */,
 				5072AFFA1F6D900B006B0A0B /* AppDelegate.swift in Sources */,
+				5072B0281F6DA28B006B0A0B /* BioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

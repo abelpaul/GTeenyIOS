@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wTT-7e-EcN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,98 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Azn-Cp-qRn">
+                                <rect key="frame" x="20" y="97" width="335" height="473.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abel George" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJn-oP-o0i">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="32.5"/>
+                                        <color key="backgroundColor" red="0.92554211616516113" green="0.75837992430244194" blue="0.61624692475582343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="evd-s0-Bz2">
+                                        <rect key="frame" x="0.0" y="62.5" width="335" height="335"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="evd-s0-Bz2" secondAttribute="height" multiplier="1:1" id="gwQ-vX-vfX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dS2-Ta-w6r">
+                                        <rect key="frame" x="0.0" y="427.5" width="335" height="46"/>
+                                        <color key="backgroundColor" red="0.92554211616516113" green="0.75837992430244194" blue="0.61624692475582343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
+                                        <color key="tintColor" red="0.953357913375801" green="1" blue="0.93325153342590339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="About Me!">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwg-Xs-7Jz"/>
+                                            <segue destination="WJj-kW-lYq" kind="show" id="xbB-Re-FkW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92471939325332642" green="0.75665909051895142" blue="0.61387461423873901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Azn-Cp-qRn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KCx-a2-gFA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Azn-Cp-qRn" secondAttribute="trailing" constant="20" id="OKo-Mh-K55"/>
+                            <constraint firstItem="Azn-Cp-qRn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qTc-x7-uCO"/>
+                            <constraint firstItem="Azn-Cp-qRn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qy9-ka-9ib"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Fq3-bW-UW4"/>
+                    <connections>
+                        <outlet property="aboutMeButton" destination="dS2-Ta-w6r" id="QjJ-qQ-vVe"/>
+                        <outlet property="profileImageView" destination="evd-s0-Bz2" id="PCQ-j9-xsO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="918" y="36"/>
+        </scene>
+        <!--Bio View Controller-->
+        <scene sceneID="fES-VG-7KG">
+            <objects>
+                <viewController id="WJj-kW-lYq" customClass="BioViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XSc-NG-Mvz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92554211620000004" green="0.8379429639" blue="0.40496566550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="G8T-bq-OZu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xRQ-5A-Aa1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6O5-5a-j7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719.2" y="35.532233883058474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fN6-b8-KQy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wTT-7e-EcN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C5p-Mv-68e">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wLC-Gn-8xh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDH-k8-4JD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22.399999999999999" y="36.881559220389811"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="855" height="768"/>
+    </resources>
 </document>
